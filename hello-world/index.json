@@ -1,13 +1,21 @@
 {
-  "title": "Hello World Scenario",
+  "title": "My online terminal",
   "description": "Your First Scenario",
   "difficulty": "beginner",
-  "time": "2 minutes",
+  "time": "30 minutes",
   "details": {
-    "steps": [{
+    "steps": [
+      {
       "title": "Step 1 - Run Command",
       "text": "step1.md"
-    }],
+      },
+      {
+        "title": "Step 2 - Run commands in background",
+        "code": "foreground.sh",
+        "courseData": "background.sh",
+        "text": "step2.md"
+      }
+   ],
     "intro": {
       "text": "intro.md",
       "credits": ""
@@ -17,10 +25,10 @@
     }
   },
   "environment": {
-    "uilayout": "terminal",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+    "hideintro": true,
+    "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "bash"
+    "imageid": "docker"
   }
 }
